@@ -1,0 +1,137 @@
+/*global*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    background-color: rgb(250, 246, 240);
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+p{
+    line-height: 2;
+}
+
+.temp-converter {
+    padding-top: 20px;
+    box-shadow:  5px 4px 10px 0px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin:auto;
+    height:800px;
+    border-radius: 8px;
+    background: linear-gradient(#0097b2, #fcb045, #7ed957);
+    width: 500px;
+}
+
+.temp-converter h1{
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: .06em .03em 0 rgb(34, 27, 31);
+    animation: neon 6s ease-in-out infinite;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #5f93e0a8, 0 0 20px #24229ca8, 0 0 2px #13c598;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 1px #1a0303, 0 0 5px #1f0807, 0 0 5px #48806a;
+        color: #fbfcdb;
+    }
+}
+
+
+
+.image-set{
+    text-align: center;
+}
+.weatherImages1{
+    width:120px;
+    animation: fadeIn 3s;
+}
+.weatherImages2{
+    width:120px;
+    animation: fadeOut 3s;
+}
+.weatherImages3{
+    width:120px;
+    animation: fadeIn 3s;
+}
+
+.btn-convert{
+    text-align: center;
+}
+.button-convert{
+    background-color: #224280d3;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow:  5px 4px 10px 0px black;
+}
+.button-convert:hover {
+    box-shadow: 0px 0px 10px 1px #3c3147;
+    background: linear-gradient(165deg, #89aef7d3 2%, #325bacd3 75%);
+}
+.result-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.h2{
+    display: inline;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+textarea {
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    width: 345px;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 4px 10px 0;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%, 0);
+	}
+	to {
+		opacity: 2;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 3;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
