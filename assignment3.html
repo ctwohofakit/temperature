@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Moderustic&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assignment3.css">
+    <title>Temperature</title>
+</head>
+
+
+<body>
+    <div class="temp-converter">
+        <h1>Temperature converter </h1>
+            <div class="image-set">
+                <img class="weatherImages1" src="./img/cloudIcon.png">
+                <img class="weatherImages2" src="./img/stormIcon.png">
+                <img class="weatherImages3" src="./img/sunnyIcon.png">
+            </div>
+
+
+
+            <div class="convert-area">
+                <div class="input-temp">
+                <label for="input-temp">Enter:</label>
+                <input type="number" id="input-temp" placeholder="Enter temperature"></input>
+                <label for="scale">Select:</label>
+                <select id="scale">
+                    <option value="C">Celsius to Fahrenheit</option>
+                    <option value="F">Fahrenheit to Celsius</option>
+                </select>
+                </div>
+
+
+                <button class="button-convert" onclick="convertTemperature()">Convert</button>
+                    <div class="result-area">
+                        <h2 id="result-title">Result:</h2>
+                        <textarea id="result"></textarea>
+                        
+                    </div>
+                    <br>
+                <div >
+                        <div class="meter">
+                        <div id="result-saying" style="height:0" data-value="0°C"></div>
+                        <span class="glass">
+                            <span class="cold-result" style="display: none; min-height: 30%;"></span>
+                            <span class="warm-result" style="display: none; min-height: 50%;"></span>
+                            <span class="hot-result" style="display: none; min-height: 70%;"></span>
+                        </span>
+                        <h3 class="glass-result" id="glass-result"></h3>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./assignment3.js"></script>
+    <!--
+    <script src="function.js"></script>
+    -->
+
+    
+</body>
+</html>

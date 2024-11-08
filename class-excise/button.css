@@ -1,0 +1,16 @@
+svg{
+    cursor:pointer;
+}
+
+#darkGroup{
+    fill:var(blue);
+}
+#darkGroup{
+    fill:var(rgb(73, 177, 42));
+}
+
+#Polygon 1,
+#Polygon 2,
+#Polygon 3{
+    transition:all 1s ease;
+}

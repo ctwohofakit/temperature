@@ -13,22 +13,20 @@
 
 <body>
     <div class="temp-converter">
-        <h1>Temperature converter </h1>
-            <div class="image-set">
-                <img class="weatherImages1" src="./img/cloudIcon.png">
-                <img class="weatherImages2" src="./img/stormIcon.png">
-                <img class="weatherImages3" src="./img/sunnyIcon.png">
-            </div>
-            <div class="btn-convert">
-                <button class="button-convert" onclick="convertTemp()">Convert Celsius</button>
-                <div class="result-area">
-                    <div>
-                        <h2>Result:</h2>
-                    </div>
-                <textarea class="result-text" id="tempResult"> </textarea>
+        <h1>movie ticket based on viewer's age</h1>
+
+            <button class="button-convert" onclick="ticketPrice()">Check ticket price</button>
+            <div class="result-area">
+                <div>
+                    <h2>Result:</h2>
+                </div>
+                    <textarea class="result-text" id="priceResult"> </textarea>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="weather">
     </div>
 
 
@@ -38,7 +36,7 @@
 
 
 
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/condition.js"></script>
     <!--
     <script src="function.js"></script>
     -->
