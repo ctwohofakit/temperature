@@ -15,10 +15,10 @@ function convertTemperature(){
         convertedTemp = (temperature  * 9/5) + 32;
         console.log(convertedTemp);
         document.getElementById("result").innerHTML=`The temperature ${temperature} °C is ${convertedTemp.toFixed(2)} °F.`;
-            if (convertedTemp < 59) {
+            if (convertedTemp < 50) {
                 document.querySelector(".cold-result").style.display = "block";  // Show cold (blue)
                 document.getElementById("glass-result").innerHTML="It's chilly outside.";
-            } else if (convertedTemp < 68) {
+            } else if (convertedTemp < 80) {
                 document.querySelector(".warm-result").style.display = "block";  // Show warm (orange)
                 document.getElementById("glass-result").innerHTML="It's a warm day.";
             } else {
@@ -26,13 +26,14 @@ function convertTemperature(){
                 document.getElementById("glass-result").innerHTML="It's hot, don't forget to drink water";
             }
     }else if(scale=="F"){
+        //Fahrenheit to Celsius
         convertedTemp = (temperature - 32) * 5/9
         console.log(convertedTemp);
         document.getElementById("result").innerHTML=`The temperature ${temperature} °F is ${convertedTemp.toFixed(2)} °C.`;
             if (convertedTemp < 15) {
                 document.querySelector(".cold-result").style.display = "block";  // Show cold (blue)
                 document.getElementById("glass-result").innerHTML="It's chilly outside.";
-            } else if (convertedTemp < 20) {
+            } else if (convertedTemp < 25) {
                 document.querySelector(".warm-result").style.display = "block";  // Show warm (orange)
                 document.getElementById("glass-result").innerHTML="It's a warm day.";
             } else {
