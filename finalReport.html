@@ -6,27 +6,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Moderustic&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="./finalReport.css">
     <title>Temperature</title>
 </head>
 
 
 <body>
     <div class="temp-converter">
-        <h1>Temperature converter </h1>
+        <h1>Temperature Converter </h1>
             <div class="image-set">
                 <img class="weatherImages1" src="./img/cloudIcon.png">
                 <img class="weatherImages2" src="./img/stormIcon.png">
                 <img class="weatherImages3" src="./img/sunnyIcon.png">
             </div>
-            <div class="btn-convert">
-                <button class="button-convert" onclick="convertTemperature()">Convert Celsius</button>
-                <div class="result-area">
-                    <div>
-                        <h2>Result:</h2>
-                    </div>
-                <textarea class="result-text" id="tempResult"> </textarea>
+
+
+
+            <div class="convert-area">
+                <div class="input-temp">
+                </select>
                 </div>
+
+
+                <button class="button-convert" onclick="convertTemperatureRange()">Convert Temperature</button>
+                    <div class="result-area">
+                        <div>
+                        <h2 id="result-title">Coversion Result:</h2>
+                        </div>
+                        <br>
+                        <table class="result-table" id="result">
+                        </table>
+                        </table>
+                    </div>
+
+                
+                </div>
+
             </div>
         </div>
     </div>
@@ -38,11 +53,7 @@
 
 
 
-    <script src="./scripts/assignment2.js"></script>
-    <!--
-    <script src="function.js"></script>
-    -->
+    <script src="./finalReport.js"></script>
 
-    
 </body>
 </html>
